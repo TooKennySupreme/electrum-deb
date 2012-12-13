@@ -1,0 +1,10 @@
+Package: electrum
+Version: 1.5.6
+Section: internet
+Priority: optional
+Architecture: all
+Essential: no
+Installed-Size: 1024
+Maintainer: Deafboy <deafboy@cicolina.org>
+Description: Lightweight Bitcoin client
+Depends: python-qt4, python-pip

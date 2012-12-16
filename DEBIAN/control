@@ -1,5 +1,5 @@
 Package: electrum
-Version: 1.5.6
+Version: 1.5.6.3
 Section: internet
 Priority: optional
 Architecture: all

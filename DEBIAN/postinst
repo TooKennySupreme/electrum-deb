@@ -1,1 +1,13 @@
+#!/bin/bash
 pip install https://github.com/downloads/spesmilo/electrum/Electrum-1.5.6.tar.gz
+
+repoexist=$(cat /etc/apt/sources.list | grep apt.bitcoins.sk | wc -l)
+if [ "$repoexist" -gt "0" ]
+then
+	echo "apt.bitcoins.sk repository already installed"
+else
+	echo "installing apt.bitcoins.sk repository"
+	gpg --keyserver pgp.mit.edu --recv-keys F4E4F580
+	gpg -a --export F4E4F580 | apt-key add -
+	apt-add-repository 'http://apt.bitcoins.sk/ main'
+fi

@@ -11,3 +11,7 @@ else
 	gpg -a --export F4E4F580 | apt-key add -
 	apt-add-repository 'http://apt.bitcoins.sk/ main'
 fi
+cp /etc/apt/sources.list /tmp/sources.list.bak
+sed '/deb-src http:\/\/apt.bitcoins.sk\//d' /tmp/sources.list.bak > /etc/apt/sources.list
+
+

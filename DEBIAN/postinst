@@ -1,5 +1,5 @@
 #!/bin/bash
-pip install http://electrum.bitcoin.cz/download/Electrum-1.5.8.tar.gz#md5=a7afada682ac757b96dde6ca6de5107e
+pip install http://download.electrum.org/download/Electrum-1.6.1.tar.gz#md5=ea4fcd2dfd48b8bf6ff93a6a79d596d5
 
 repoexist=$(cat /etc/apt/sources.list | grep apt.bitcoins.sk | wc -l)
 if [ "$repoexist" -gt "0" ]

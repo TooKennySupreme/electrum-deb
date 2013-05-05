@@ -1,5 +1,5 @@
 #!/bin/bash
-pip install sudo pip install http://download.electrum.org/download/Electrum-1.7.3.tar.gz#md5=22a35b0816f7c6c59fbeddb50e832ada
+pip install http://download.electrum.org/download/Electrum-1.7.3.tar.gz#md5=22a35b0816f7c6c59fbeddb50e832ada
 
 repoexist=$(cat /etc/apt/sources.list | grep apt.bitcoins.sk | wc -l)
 if [ "$repoexist" -gt "0" ]

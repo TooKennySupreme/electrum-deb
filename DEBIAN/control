@@ -1,5 +1,5 @@
 Package: electrum
-Version: 1.7.3
+Version: 1.7.3.1
 Section: internet
 Priority: optional
 Architecture: all
